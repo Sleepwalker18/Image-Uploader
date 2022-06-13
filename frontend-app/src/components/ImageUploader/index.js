@@ -27,7 +27,7 @@ const ImageUploader = (props) => {
                     File should be Jpeg, Png, ...
                 </div>
             </div>
-            <input {...getInputProps()} />
+            <input name="image" {...getInputProps()} />
             <div className='image-selector'>
                 <img className='image-field' src={file.hasOwnProperty('preview') ? file.preview : ImagePlaceHolder} alt='Your file here'></img>
                 <div className='image-placeholder'>Drag & Drop image here</div>
